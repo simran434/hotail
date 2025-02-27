@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		
+		
+		/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+
+}
+
+header {
+    background-color: rgb(74, 35, 183);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    top: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li a:hover {
+   
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+#about, #rooms, #contact {
+    background-color: #fff;
+}
+
+
+
+.form{
+padding: 0px;
+height: 25px;
+
+
+
+}
+
+.shet{
+  width: px;
+border: 1xp solid blue;
+border-radius: 40px;
+
+
+
+}
+
+/*time*/
+
+.clock {
+		  background:rgb(255, 255, 255);
+		  padding: 0px 0px;
+		  border-radius: 12px;
+		  text-align: center;
+      
+		}
+	
+		.time {
+		  font-size: 2rem;
+		  font-weight: bold;
+		  color: #0a0c71;
+		}
+	
+		.date {
+		  font-size: 1.1rem;
+		  color: #616706;
+		  margin-top: 10px;
+		}
+
+/*images*/
+
+
+.container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 40px;
+      padding: 20px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .container img {
+      width: 99%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    button{
+
+
+background-color:  rgb(193, 22, 22); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+
+    }
+
+    button:hover{
+
+        background-color: yellow;
+  font-size: 18px;
+}
+
+.hading{
+
+text-align: center;
+font-size: 30px;
+
+}
+.hedingone{
+color: #04AA6D;
+
+font-size: 20px;
+font-family:  "Trirong", serif;
+
+
+}
+
+/*image text*/
+
+.paragrap{
+margin: 15px;
+padding: 5px;
+text-align: center;
+width: 1200px;
+
+
+
+}
+
+/*------*/
+
+.stop{
+  position: relative;
+  font-family: Arial;
+  height: 80%;
+  width: 99%;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*----*/
+.apple{
+
+margin: 20px;
+padding: 10px;
+box-sizing: border-box;
+
+}
+
+.row{
+  position: relative;
+
+}
+
+.imgtext{
+  width: 700px;
+  height: auto;
+  padding: 100px;
+position: absolute;
+text-align: center;
+bottom: 0;
+left: 0;
+
+
+}
+
+
+.table{
+margin: 50px;;
+float: left;
+width:30%;
+top: 0px;
+
+
+}
+
+.sun{
+  margin: 100px;
+  padding: 50px;
+background-color: rgb(248, 252, 230);
+border-radius: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/*-----*/
+
+body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Baloo 2';
+        }
+        .content {
+          margin: 10px;
+          padding: 40px;
+            flex: 1;
+        }
+        footer {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-box {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color:000000;
+        }
+  
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+ <header class="w3-animate-top">
+        <nav>
+            <div class="logo">
+                <img src="https://www.lemontreehotels.com/assets/fronts/images/logo.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li class="uman"><a href="#home">Home</a></li>
+                <li class="manu" ><a href="#about">Hotels</a></li>
+                <li class="" ><a href="#rooms">Offers & Promotions</a></li>
+                <li class="" ><a href="#contact">Rewards Program</a></li>
+                <li class="" ><a href="#contact">Our Brands</a></li>
+                <li class="" ><a href="#contact">Sustainability </a></li>
+                <li><input class="manu" type="submit" value="Book Now"></li>
+              
+            </ul>
+        </nav>
+    </header>
+<br>
+   
+<script>
+  function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const dateString = now.toLocaleDateString(undefined, options);
+
+  document.getElementById('time').textContent = timeString;
+  document.getElementById('date').textContent = dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock(); // Initialize immediately
+</script>
+
+<div>
+              
+  <div class="clock">
+    <span class="time" id="time"></span>
+    <br>
+    <span class="date" id="date"></span>
+  </div>
+
+</div>
+  
+    <br>
+<span class=" form  w3-center">
+    <form >
+      <label style="font-size: 20px;" for="username">Upcoming Hotels:</label>
+      <input type="text" id="username" name="where to next">
+      <input type="submit" value="submit">
+</form>
+</span>
+<br><br>
+
+<span class="slider_main_slider" id="sliderHomeVideo">
+    <video width="100%" class="video_sc_desktop" poster="new-images/video-thumb.webp'" autobuffer="" autoplay="" loop="" muted="" playsinline="" controls="" style="height: 100vh; object-fit: cover;">
+        <source src="https://www.lemontreehotels.com/assets/fronts/new-images/lemon-tree-desktop-video-1.mp4" type="video/mp4">
+    </video>
+</span>
+
+<hr>
+
+<h1 class="w3-center">Choose your destination</h1>
+<div class="container">
+    <div class="w3-animate-left">
+    <img src="https://www.lemontreehotels.com/assets/fronts/new-images/travelForMumbai.jpg" alt="Image 1">
+    <h1 class="hading">Mumbai</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+
+    </div>
+
+    <div class="w3-animate-top">
+    <img src="https://www.lemontreehotels.com/assets/fronts/new-images/travelForDelhi.jpg" alt="Image 2">
+    <h1 class="hading">Delhi</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+    </div>
+
+    <div class=" w3-animate-top">
+    <img src="https://www.lemontreehotels.com/assets/fronts/new-images/travelForBengaluru.jpg" alt="Image 3">
+    <h1 class="hading">Bengaluru</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+    </div>
+
+<div class="w3-animate-right">
+    <img src="https://www.lemontreehotels.com/assets/fronts/new-images/travelForAHMEDABAD.jpg" alt="Image 6">
+    <h1 class="hading">Ahmedabad</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="w3-animate-left">
+    <img src="	https://www.lemontreehotels.com/assets/fronts/new-images/travelPune.jpg" alt="Image 4">
+    <h1 class="hading">Pune</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+    </div>
+
+    <div class=" sami  w3-animate-zoom ">
+    <img src="	https://www.lemontreehotels.com/assets/fronts/new-images/travelGurgaon.jpg" alt="Image 5">
+    <h1 class="hading">Gurugram</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+</div>
+    </div>
+
+    <div class="w3-animate-zoom">
+    <img src="https://www.lemontreehotels.com/assets/fronts/new-images/travelChennai.jpg" alt="Image 6">
+    <h1 class="hading">Chennai</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+    </div>
+
+    <div class="w3-animate-right">
+    <img src="https://www.lemontreehotels.com/assets/fronts/new-images/travelHyderabad.jpg" alt="Image 6">
+    <h1 class="hading">Hyderabad</h1>
+    <div class="w3-center">
+    <button>Book Now</button>
+    </div>
+    </div>
+  </div>
+
+<hr>
+
+<p class=" hedingone w3-center">Welcome to The Westin Mumbai Powai Lake</p>
+<h2 class="w3-center" style="font-family: Georgia, serif; font-size:35px">Relax amidst 5-star amenities at our hotel in Powai, Mumbai</h2>
+<div class="paragrap"><span class="heading-component-see-more-text show-more-text"> most energized and effective version of yourself.
+ Awaken your senses with a multitude of wellness experiences, including our Heavenly Spa and WestinWORKOUT fitness studio. Take in
+views of Mumbai's verdant landscape and beautiful Powai Lake. We offer hotel guests a variety of dynamic meeting venues that balance
+individual and group needs with inspiring spaces for weddings, conferences, seminars, and social events. The dining options at our 5-star
+hotel reflect India's rich and diverse culinary traditions. Sample global cuisines
+and curated menus designed to satisfy even the most
+discerning diner's palate. Rejuvenate yourself each night in Mumbai when you rest on award-winning Westin Heavenly® Beds in plush
+accommodations at The Westin Mumbai Powai Lake, one of Marriotts largest Powai hotels in Mumbai. </span></div>
+<hr>
+
+<br>
+<div class="apple">
+<div class="row">
+  <img src="https://res-5.cloudinary.com/gll/image/upload/c_fit,f_auto,h_330,w_750/v1562109609/Pool_Facility_Page.jpg" alt="suming" width="99%" height="99%">
+  <div class="imgtext">
+<h1 class="w3-center" style="font-weight: bold; font-family: 'Gill Sans';">Infinity Rewards</h1>
+<p>scerning diner's palate. Rejuvenate yourself each night in Mumbai when you rest on award-winning Westin Heavenly® Beds in plush
+  accommodations at The Westin Mumbai Powai Lake, one of Marriott’s largest Powai hotels in </p>
+  <button class="w3-red">join us</button>
+  </div>
+  </div>
+</div>
+<hr>
+<h1 class="w3-center" style="font-size: 60px;">Our brands</h1>
+<br>
+<!-------->
+
+<div class="sun">
+
+<p><img class="table" src="https://www.hotelscombined.in/himg/e3/b0/1b/leonardo-14453-150669325-104651.jpg" alt="Pineapple" style="height:50%; width: 40%;margin-right:40px; margin-top: 0px;">
+  <span>ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+   Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula
+  , facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit 
+  risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis 
+  imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue 
+  eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit
+  Awaken your senses with a multitude of wellness experiences, including our Heavenly Spa and WestinWORKOUT fitness studio. Take in
+views of Mumbai'sneeds with inspiring spaces for weddings, conferences, seminars, and social events. The dining options at our 5-star
+ </span>.</p>
+
+</div>
+<hr>
+<div style="text-align:center ;">
+<iframe width="1100" height="615" src="https://www.youtube.com/embed/vZE35FI3wxw?si=NRoJAI5s2vq5aZki" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<hr>
+<footer>
+
+  <h2 style="text-align: center;">Our Choose hotel</h2>
+  <br><br>
+  <div class="content">
+   <table style="width: 90%; text-align: left; font-size: 20px;" >
+   <tr>
+<th>Awards</th>
+<th>Blogs</th>
+<th>Media</th>
+<th>driving</th>
+
+   </tr>
+
+   <tr>
+
+   <th>About us</th>
+   <th>Day Use</th>
+   <th>Site Map</th>
+   <th>content</th>
+
+</tr>
+   
+<tr>
+
+   <th>Careers</th>
+   <th>cookies Policy</th>
+   <th>Non Affiliation</th>
+   <th>Terms & Conditions</th>
+   
+</tr>
+
+<tr>
+
+  <th>Menu</th>
+    <th>About</th>
+    <th>Location</th>
+    <th>Privacy & Terms</th>
+  
+  </tr>
+  <tr>
+  <th>Privacy Policy</th>
+    <th>Terms & Conditions</th>
+    
+</tr>
+
+
+   </table>
+  </div>
+
+  <label style="font-size: 20px;" for="username"></label>
+      <input type="text" id="username" name="where to next">
+      <input style="background-color: bisque;" type="submit" value="submit">
+
+<p class="w3-center">©2024 by Lemon Tree Hotels Ltd. All Rights Reserved.</p>
+
+  
+</footer>
+
+
+
+
+</body>
+</html>
